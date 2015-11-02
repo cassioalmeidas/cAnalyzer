@@ -2,8 +2,6 @@
 
 /* Selection sort algorithm */
 
-#include <stdio.h>
- 
 int main()
 {
    int array[100], n, c, d, position, swap;

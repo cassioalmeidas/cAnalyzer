@@ -1,9 +1,7 @@
 // source code from http://www.programmingsimplified.com/c/source-code/c-program-bubble-sort
 
 /* Bubble sort code */
- 
-#include <stdio.h>
- 
+  
 int main()
 {
   int array[100], n, c, d, swap;

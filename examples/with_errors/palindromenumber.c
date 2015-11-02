@@ -2,7 +2,6 @@
 
 /* Palindrome number */
 
-#include <stdio.h>
  
 int main()
 {
@@ -20,7 +19,7 @@ int main()
       temp = temp/10;
    }
  
-   if ( n == reverse )
+   if ( n == reverse );
       printf("%d is a palindrome number.\n", n);
    else
       printf("%d is not a palindrome number.\n", n);

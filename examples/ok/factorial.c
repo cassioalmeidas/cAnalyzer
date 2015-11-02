@@ -1,8 +1,6 @@
 // source from http://www.programmingsimplified.com/c-program-find-factorial
 
 /* Factorial */
-
-#include <stdio.h>
  
 int main()
 {

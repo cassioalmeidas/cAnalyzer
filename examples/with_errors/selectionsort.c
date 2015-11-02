@@ -2,13 +2,12 @@
 
 /* Selection sort algorithm */
 
-#include <stdio.h>
  
 int main()
 {
    int array[100], n, c, d, position, swap;
  
-   printf("Enter number of elements\n");
+   printf("Enter number of elements\n);
    scanf("%d", &n);
  
    printf("Enter %d integers\n", n);
