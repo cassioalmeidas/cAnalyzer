@@ -23,6 +23,7 @@
 # Builds
 build/*.c
 build/*.o
+build/*.h
 
 # Executables
 *.exe

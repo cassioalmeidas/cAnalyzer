@@ -2,6 +2,8 @@
 
 /* Palindrome number */
 
+#include <stdio.h>
+
 int main()
 {
    int n, reverse = 0, temp;

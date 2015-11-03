@@ -2,6 +2,8 @@
 
 /* Selection sort algorithm */
 
+#include <stdio.h>
+
  
 int main()
 {

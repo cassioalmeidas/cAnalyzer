@@ -2,6 +2,7 @@
 
 /* insertion sort ascending order */
  
+#include <stdio.h>
 
 int main()
 {

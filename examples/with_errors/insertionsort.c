@@ -1,6 +1,8 @@
 // source from http://www.programmingsimplified.com/c/source-code/c-program-insertion-sort
 
 /* insertion sort ascending order */
+
+#include <stdio.h>
  
 int main()
 {
