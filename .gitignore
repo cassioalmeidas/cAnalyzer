@@ -21,7 +21,8 @@
 *.dylib
 
 # Builds
-build/*
+build/*.c
+build/*.o
 
 # Executables
 *.exe
