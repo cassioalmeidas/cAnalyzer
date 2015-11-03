@@ -21,7 +21,9 @@ $(addprefix $(BUILD_DIR)/, $(TARGET_OBJS)):
 clean:
 	$(COLOR_YELLOW)
 	@echo "cleaning projects:"
-	@rm -rf $(BUILD_DIR)/*
+	@rm -rf $(BUILD_DIR)/*.c
+	@rm -rf $(BUILD_DIR)/*.h
+	@rm -rf $(BUILD_DIR)/*.o
 	@echo "removed everything in directory $(BUILD_DIR)"
 	@rm -f ./$(TARGET)
 	@echo "removed target binary:$(TARGET)"

@@ -102,7 +102,7 @@ static int check_type(void);
 {HP}{H}+"."{P}{FS}?         { return F_CONSTANT; }
 
 ({SP}?\"([^"\\\n]|{ES})*\"{WS}*)+   { return STRING_LITERAL; }
-"#".*                       {} /* ignore preprocessor directives */
+"#".+                       {} /* ignore preprocessor directives */
 
 "..."                   { return ELLIPSIS; }
 ">>="                   { return RIGHT_ASSIGN; }
