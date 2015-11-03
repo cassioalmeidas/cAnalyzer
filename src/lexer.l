@@ -27,11 +27,11 @@ WS  [ \t\v\n\f]
 #include <stdio.h>
 #include "parser.h"
 
-extern void yyerror(const char *);  /* prints grammar violation message */
+extern void yyerror(const char *);  
 
-extern int sym_type(const char *);  /* returns type from symbol table */
+extern int sym_type(const char *);  
 
-#define sym_type(identifier) IDENTIFIER /* with no symbol table, fake it */
+#define sym_type(identifier) IDENTIFIER
 
 static void comment(void);
 static int check_type(void);
@@ -39,7 +39,7 @@ static int check_type(void);
 
 %%
 "/*"                                    { comment(); }
-"//".*                                    { /* consume //-comment */ }
+"//".*                                  {  }
 
 "auto"                  { return(AUTO); }
 "break"                 { return(BREAK); }
@@ -150,14 +150,14 @@ static int check_type(void);
 "|"                 { return '|'; }
 "?"                 { return '?'; }
 
-{WS}                    { /* whitespace separates tokens */ }
-.                   { /* discard bad characters */ }
+{WS}                { }
+.                   { }
 
 %%
 
-int yywrap(void)        /* called at end of input */
+int yywrap(void)        
 {
-    return 1;           /* terminate now */
+    return 1;          
 }
 
 static void comment(void)
@@ -183,11 +183,11 @@ static int check_type(void)
 {
     switch (sym_type(yytext))
     {
-    case TYPEDEF_NAME:                /* previously defined */
+    case TYPEDEF_NAME:                
         return TYPEDEF_NAME;
-    case ENUMERATION_CONSTANT:        /* previously defined */
+    case ENUMERATION_CONSTANT:        
         return ENUMERATION_CONSTANT;
-    default:                          /* includes undefined */
+    default:                          
         return IDENTIFIER;
     }
 }
